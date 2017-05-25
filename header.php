@@ -31,70 +31,38 @@
 
             <div class="row">
 
-           <?php if (get_option('header_type','options')===false) { ?>
+           <?php ?>
+                <div id="site-branding" class="brand col-sm-12">
 
-                <div id="site-branding" class="col-sm-12">
 
                     <?php if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) {
 
                         the_custom_logo();
 
-                    } else { ?>
-
-                        <a href="<?php echo esc_url( home_url() ); ?>">
-                            <?php echo get_bloginfo( 'name' ); ?>
-                        </a>
-
-                        <?php if ( get_bloginfo( 'description' ) ) : ?>
-                            <h5 class="site-description">
-                                <?php echo get_bloginfo( 'description' ); ?>
-                            </h5>
-                        <?php endif; ?>
-
-                    <?php } ?>
-
-                    <div id="slicknav-menu-toggle">
-
-                        <i class="fa fa-bars"></i>
-
-                    </div>
-
-                </div>
-
-                <?php } else { ?>
-
-                    <div id="site-branding" class="col-sm-12">
-
-                    <?php if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) {
-
-                      //  the_custom_logo();
-
-                    } else { ?>
-
-                        <a href="<?php echo esc_url( home_url() ); ?>">
-                            <?php echo get_bloginfo( 'name' ); ?>
-                        </a>
-
-                        <?php if ( get_bloginfo( 'description' ) ) : ?>
-                            <h5 class="site-description">
-                                <?php echo get_bloginfo( 'description' ); ?>
-                            </h5>
-                        <?php endif; ?>
-
-                    <?php } ?>
-
-                    <div id="slicknav-menu-toggle">
-
-                        <i class="fa fa-bars"></i>
-
-                    </div>
-
-                </div>
-
                     } ?>
+                        <a href="<?php echo esc_url( home_url() ); ?>">
+                            <?php echo get_bloginfo( 'name' ); ?>
+                        </a>
+
+                        <?php if ( get_bloginfo('description' ) ) : ?>
+                            <h5 class="site-description">
+                                <?php echo get_bloginfo( 'description' ); ?>
+                            </h5>
+                        <?php endif; ?>
+
+                    </div>
 
 
-               
+                
+                    <?php// } ?>
+
+                    <div id="slicknav-menu-toggle">
+
+                        <i class="fa fa-bars"></i>
+
+                    </div>
+
+                </div>
 
                 <div id="site-navigation" class="col-sm-12">
 
