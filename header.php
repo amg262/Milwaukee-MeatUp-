@@ -18,6 +18,31 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+<style>
+    
+
+.brand-wid {
+    padding: 0 0 50px!important;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px #000;
+
+}
+.brand-wid img {
+    opacity:.9;
+    
+}
+.brand-wid img:hover {
+    opacity:1;
+    
+}
+#loginform p {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: .02em;
+    margin: 5px auto 15px auto;
+}
+</style>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -32,7 +57,7 @@
             <div class="row">
 
            <?php ?>
-                <div id="site-branding" class="brand col-sm-12">
+                <div id="site-branding" class="brand-wid col-sm-12">
 
 
                     <?php if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) {
