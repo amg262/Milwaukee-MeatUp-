@@ -12,6 +12,11 @@
 ?>
 
     </div><!-- #content -->
+<style>
+    #footer-branding {
+        display: none;
+    }
+</style>
 
     <footer id="colophon" class="site-footer" role="contentinfo">
         
